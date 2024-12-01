@@ -1,0 +1,122 @@
+.indexContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243,235,226);
+    width: 100vw;
+    height: 100vh;
+}
+
+.rcontact {
+    width: 30vw;
+    height: 25vw;
+    background-color: white;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.lcontact {
+    padding: 2vw;
+    background-color: rgba(32,36,40,255);
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    color: white;
+    width: 30vw;
+    height: 25vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.lcontact h2 {
+    font-size: 5vw;
+}
+
+.rcontact form{
+    width: 30vw;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 0vh 2vw;
+}
+
+.itemForm {
+    gap: 0.2vw;
+    font-size: 1vw;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.btnForm {
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    background-color: rgba(48,106,84,255);
+    height: 2vw;
+    width: auto;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
+}
+
+/* feedback */
+
+.feedback-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feedback-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feedback-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #016b0a;
+}
+
+.feedback-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.feedback-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}

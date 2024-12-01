@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROkit GO</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contactVer2.css">
+    <link rel="stylesheet" href="data.css">
+    <link rel="stylesheet" href="distribution.css">
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <ul>
+                <a id="ctn" class="btnNav btnNavActive bouncy" onclick="showDiv('home', this); togglePage('pageB', 'pageA')">Home</a>
+                <a id="ctn" class="btnNav bouncy" onclick="showDiv('contact', this)" style="animation-delay:0.07s">Contact</a>
+                <a id="ctn" class="btnNav bouncy" onclick="showDiv('distribution', this)" style="animation-delay:0.14s">Distribution</a>
+                <a id="ctn" class="btnNav bouncy" onclick="showDiv('data', this)" style="animation-delay:0.21s">Data</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Edukasi -->
+
+    <main id="home" class="contentNone contentActive">
+        <section class="home page active" id="pageB">
+            <div class="mainHome">
+                <div class="lHome">
+                    <div class="textHome">
+                        <h1 style="font-weight: bold;">
+                            Healthy Food, Rokit GO
+                        </h1>
+                        <p>Solusi cegah stunting<br>Craker Rokit.</p>
+                        <button type="button" class="btnPageHome" onclick="togglePage('pageA', 'pageB')">Tentang Rokit</button>
+                    </div>
+                </div>
+                <div class="rHome">
+                    <div class="imgrHome">
+                        <img alt="ok" src="img/New Project [39F575A].png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="composition page" id="pageA">
+            <div class="mainComposition">
+                <div class="titleComposition">
+                    <h1 style="font-weight: bold;">Komposisi penting yang terkandung dalam <br> Rokit Craker</h1>
+                </div>
+                <div class="grupItemComposition">
+                    <div class="lItemComposition">
+                        <div style="width: 100%; display: flex; justify-content: end;">
+                            <button onclick="toggleCom(this, 'imgKk', 'txtKk')" class="itemComposition ic1 icActive" style="direction: rtl;">
+                                <div>
+                                    <h2>Kacang Koro</h2>
+                                </div>
+                            </button>
+                        </div>
+                        <div style="width: 100%; display: flex; justify-content: end;">
+                            <button onclick="toggleCom(this, 'imgDk', 'txtDk')" class="itemComposition" style="direction: rtl;">
+                                <h2>Daun Kelor</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pictItemComposition">
+                        <img id="imgKk" src="img/kacangKoro.png" class="imgItem imgNone imgActive">
+                        <img id="imgDk" src="img/daunKelor.png" class="imgItem imgNone">
+                        <img id="imgHa" src="img/hatiAyam.png" class="imgItem imgNone">
+                        <img id="imgB" src="img/beras.png" class="imgItem imgNone">
+                    </div>
+                    <div class="rItemComposition">
+                        <div style="width: 100%; display: flex; justify-content: start;">
+                            <button onclick="toggleCom(this, 'imgHa', 'txtHa')" class="itemComposition ic1" style="direction: ltr;">
+                                <h2>Hati Ayam</h2>
+                            </button>
+                        </div>
+                        <div style="width: 100%; display: flex; justify-content: start;">
+                            <button onclick="toggleCom(this, 'imgB', 'txtB')" class="itemComposition" style="direction: ltr;">
+                                <h2>Beras</h2>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grubInfoItem">
+                    <div class="titleInfoItem">
+                        <h2>Informasi mengenai kandungan</h2>
+                    </div>
+                    <p id="txtKk" class="imgNone imgActive">Sebanyak 50 gram kacang koro mengandung nilai gizi yang sangat baik, antara lain zat besi sebesar 24,9%, energi sebesar 479 kkal, protein sebanyak 26 gram, lemak 21,82 gram, karbohidrat 76,66 gram, serta kalsium 59,70 mg. Kandungan zat besi yang tinggi pada kacang koro ini bermanfaat untuk mencegah dan mengatasi masalah stunting yang kerap dialami oleh balita serta ibu hamil atau menyusui serta mengatasi masalah anemia.</p>
+                    <p id="txtDk" class="imgNone">Daun kelor (Moringa oleifera) dikenal sebagai tanaman dengan kandungan nutrisi yang kaya dan beragam manfaat bagi kesehatan terutama dalam mendukung upaya mengatasi masalah stunting dan anemia. Berdasarkan kandungan nutrisi, daun kelor mengandung protein sebesar 28,44%, lemak 2,74%, karbohidrat 57,01%, serat 12,63%, dan kalsium 1600–2200 mg. Kandungan kalsium yang tinggi dalam daun kelor sangat bermanfaat bagi balita yang sedang dalam masa pertumbuhan karena kalsium merupakan komponen esensial dalam perkembangan tulang dan gigi yang kuat.</p>
+                    <p id="txtHa" class="imgNone">Dalam setiap 100 gram hati ayam, terkandung protein sebanyak 27,4 gram, jumlah yang sepuluh kali lebih tinggi dibandingkan dengan kandungan protein pada daging ayam itu sendiri. Selain itu, hati ayam juga merupakan sumber kaya vitamin B; mengandung 16,6 mikrogram vitamin B12, 0,9 miligram vitamin B6, dan 0,36 miligram vitamin B1. Berkat kandungan vitamin dan mineral yang begitu lengkap ini, hati ayam menjadi pilihan yang sangat baik untuk memenuhi kebutuhan nutrisi tubuh terutama bagi kelompok yang rentan terhadap defisiensi nutrisi, seperti balita dan ibu hamil.</p>
+                    <p id="txtB" class="imgNone">Beras mengandung zat besi (Fe) dan seng (Zn), yang merupakan zat gizi mikro esensial bagi kesehatan manusia terutama bagi balita dan ibu hamil. Kekurangan zat besi dan seng dapat mengakibatkan berbagai masalah kesehatan termasuk anemia dan stunting yang umum terjadi di negara-negara Asia Selatan akibat defisiensi mikronutrien.</p>
+                </div>
+                <div class="indexSA">
+                    <div class="titleSA">
+                        <h2>Tentang stunting dan anemia</h3>
+                    </div>
+                    <div class="mainSA">
+                        <div class="lSA">
+                            <div class="rimglSA">
+                                <img src="img/height-meter-concept-illustration_114360-7753.jpg">
+                            </div>
+                            <div class="limglSA">
+                                <img src="img/oncology-patient-concept-illustration_114360-8808.avif">
+                            </div>
+                        </div>
+                        <div class="rSA">
+                            <h2>Rokit solusi strategis menangani stunting dan anemia</h2>
+                            <p>Anemia terjadi saat tubuh kekurangan sel darah merah atau hemoglobin, sehingga oksigen tidak terdistribusi dengan baik ke seluruh tubuh. Ini biasanya disebabkan oleh kekurangan zat besi, vitamin B12, atau asam folat, yang dapat menyebabkan kelelahan, lemas, dan gangguan konsentrasi.
+                                <br>Stunting terjadi akibat kurangnya asupan gizi dalam jangka panjang, terutama selama 1.000 hari pertama kehidupan (sejak kehamilan hingga usia 2 tahun). Hal ini menghambat pertumbuhan anak, sehingga tinggi badan tidak sesuai dengan usianya, serta dapat memengaruhi perkembangan otak dan kemampuan belajar.</p>
+                            <p>Produk inovasi rokit hadir sebagai solusi strategis untuk menjawab tantangan stunting dan anemia yang masih menjadi masalah kesehatan utama di Kabupaten Nganjuk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stuntingAnemia">
+        </section>
+        <section></section>
+    </main>
+
+    <!-- Kontak -->
+
+    <main id="contact" class="contentNone">
+        <!-- <div id="contentContact" class="pageContact">
+            <div class="contentContact">
+                <div class="itemContact">
+                    <div class="contact">
+                        <div class="nameContact">Risa</div>
+                        <div class="numContact">+62 821-4105-0915</div>
+                        <div class="infoContact">Produsen Rokit (Pengelola Bahan).</div>
+                        <div style="display: flex; justify-content: end; align-items: center;">
+                            <button class="btnContact" onclick="sendMessageToWhatsapp()">Hubungi</button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="nameContact">Zuke</div>
+                        <div class="numContact">+62 812-3308-5801</div>
+                        <div class="infoContact">Produsen Rokit (Analisis Gizi).</div>
+                        <div style="display: flex; justify-content: end; align-items: center;">
+                            <button class="btnContact">Hubungi</button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="nameContact">Tasya</div>
+                        <div class="numContact">+62 857-9119-0912</div>
+                        <div class="infoContact">Distributor Rokit (Pengelola Distribusi).</div>
+                        <div style="display: flex; justify-content: end; align-items: center;">
+                            <button class="btnContact">Hubungi</button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="nameContact">Pira</div>
+                        <div class="numContact">+62 895-2548-1029</div>
+                        <div class="infoContact">Distributor (Pengelola Kerjasama).</div>
+                        <div style="display: flex; justify-content: end; align-items: center;">
+                            <button class="btnContact">Hubungi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="indexContact">
+            <div class="lcontact">
+                <h2>Kontak<br> kami</h2>
+            </div>
+            <div class="rcontact">
+                <form id="waForm">
+                    <div class="itemForm">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    
+                    <div class="itemForm">
+                        <label for="purpose">Keperluan</label>
+                        <textarea id="purpose" name="purpose" placeholder="Masukkan keperluan Anda" required></textarea>
+                    </div>
+
+                    <div class="itemForm">
+                        <label for="contact">Pilih Kontak</label>
+                        <select id="itemContact" name="contact" required>
+                            <option value="" disabled selected>Pilih kontak</option>
+                            <option value="6281233085801">Zuke (Distributor)</option>
+                            <option value="6289525481029">Pira (Distributor)</option>
+                            <option value="6285791190912">Tasya (Produksi)</option>
+                            <option value="6282141050915">Risa (Produksi)</option>
+                        </select>
+                    </div>
+            
+                    <button class="btnForm" type="button" onclick="sendToWhatsApp()">Kirim</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Distribusi -->
+
+    <main id="distribution" class="contentNone">
+        <div id="contentDistribution" class="contentDistribution">
+            <div class="mainDistribution">       
+                <div class="titleDistribution">
+                    <h2>Jadwal Distribusi Rokit</h2>
+                </div>
+                <div class="table-wrapper">
+                    <table class="fl-table">
+                        <thead>
+                        <tr>
+                            <th>Golongan 1<br>(1 x minggu)</th>
+                            <th>Golongan 2<br>(1 x 2 minggu)</th>
+                            <th>Golongan 3<br>(1 x 3 minggu)</th>
+                            <th>Golongan 4<br>(1 x 4 minggu)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Sawahan</td>
+                            <td>Ngronggot</td>
+                            <td>Berbek</td>
+                            <td>Bagor</td>
+                        </tr>
+                        <tr>
+                            <td>Wilangan</td>
+                            <td>Loceret</td>
+                            <td>Baron</td>
+                            <td>Pace</td>
+                        </tr>
+                        <tr>
+                            <td>Ngluyu</td>
+                            <td>Prambon</td>
+                            <td>Tanjunganom</td>
+                            <td>Rejoso</td>
+                        </tr>
+                        <tr>
+                            <td>Ngetos</td>
+                            <td>Gondang</td>
+                            <td>Jatikalen</td>
+                            <td>Nganjuk</td>
+                        </tr>
+                        <tr>
+                            <td>Lengkong</td>
+                            <td>Patianrowo</td>
+                            <td>Kertosono</td>
+                            <td>Sukomoro</td>
+                        </tr>
+                        <tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Data -->
+
+    <main id="data" class="contentNone">
+        <div id="contentData" class="content">
+            <div>
+                <div class="txtContentData">
+                    <h2>
+                        Data Tingkat Keluarga Resiko Stunting
+                    </h2>
+                </div>
+                <div class="simple-bar-chart">
+              
+                    <div class="item" style="--clr: #e7e3d3; --val: 20.4">
+                      <div class="label">Sawahan</div>
+                      <div class="value">20.4%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 18.5">
+                      <div class="label">Wilangan</div>
+                      <div class="value">18.5%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #09532a; --val: 16.9">
+                      <div class="label">Ngluyu</div>
+                      <div class="value">16.9%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #e7e3d3; --val: 14.8">
+                      <div class="label">Ngetos</div>
+                      <div class="value">14.8%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 10.1">
+                      <div class="label">Lengkong</div>
+                      <div class="value">10.1%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #09532a; --val: 9.37">
+                      <div class="label">Ngronggot</div>
+                      <div class="value">9.37%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #e7e3d3; --val: 9.31">
+                      <div class="label">Loceret</div>
+                      <div class="value">9.31%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 9.20">
+                      <div class="label">Prambon</div>
+                      <div class="value">9.20%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #09532a; --val: 9.20">
+                      <div class="label">Gondang</div>
+                      <div class="value">9.20%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #e7e3d3; --val: 9.10">
+                      <div class="label">Patianrowo</div>
+                      <div class="value">9.10%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 8.84">
+                      <div class="label">Berbek</div>
+                      <div class="value">8.84%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #09532a; --val: 8.75">
+                      <div class="label">Baron</div>
+                      <div class="value">8.75%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #e7e3d3; --val: 8.70">
+                      <div class="label">Tanjunganom</div>
+                      <div class="value">8.70%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 8.45">
+                      <div class="label">Jatikalen</div>
+                      <div class="value">8.45%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #09532a; --val: 8.20">
+                      <div class="label">Kertosono</div>
+                      <div class="value">8.20%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #e7e3d3; --val: 7.30">
+                      <div class="label">Bagor</div>
+                      <div class="value">7.30%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 6.79">
+                      <div class="label">Pace</div>
+                      <div class="value">6.79%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #09532a; --val: 6.70">
+                      <div class="label">Rejoso</div>
+                      <div class="value">6.70%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #e7e3d3; --val: 6.37">
+                      <div class="label">Nganjuk</div>
+                      <div class="value">6.37%</div>
+                    </div>
+                    
+                    <div class="item" style="--clr: #8bc742; --val: 6.30">
+                      <div class="label">Sukomoro</div>
+                      <div class="value">6.30%</div>
+                    </div>
+            </div>  
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a team dedicated to delivering quality services and products to enhance your daily life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tezdevvv. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contentNone {
+    display: none;
+}
+
+.contentActive {
+    display: block;
+}
+
+.page {
+    display: none; /* Halaman tersembunyi secara default */
+}
+
+.page.active {
+    display: block; /* Tampilkan halaman yang aktif */
+}
+
+.imgNone {
+    display: none;
+}
+
+.imgActive {
+    display: block;
+}
